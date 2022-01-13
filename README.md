@@ -57,3 +57,101 @@ code, name, weather_code, weather_name 항목으로 나누어 .json 파일로 �
     with open(meta_file_path, "w", encoding='UTF-8') as json_file:
 
         json.dump(weather_list, json_file, ensure_ascii = False, indent = 4)
+
+### 결과 파일
+
+- nk_weather_20220113091646.json 이름으로 .json파일이 만들어진다.
+
+[
+    {
+        "code": "i03",
+        "name": "풍산",
+        "weather": "06",
+        "weather_name": "구름많음",
+        "temperature": "-18.7"
+    },
+    {
+        "code": "i09",
+        "name": "강계",
+        "weather": "06",
+        "weather_name": "구름많음",
+        "temperature": "-17.8"
+    },
+    {
+        "code": "i01",
+        "name": "신의주",
+        "weather": "01",
+        "weather_name": "맑음",
+        "temperature": "-9.0"
+    },
+    {
+        "code": "i11",
+        "name": "함흥",
+        "weather": "01",
+        "weather_name": "맑음",
+        "temperature": "-7.1"
+    },
+    {
+        "code": "i13",
+        "name": "선봉",
+        "weather": "02",
+        "weather_name": "흐림",
+        "temperature": "-10.2"
+    },
+    {
+        "code": "i04",
+        "name": "청진",
+        "weather": "06",
+        "weather_name": "구름많음",
+        "temperature": "-8.8"
+    },
+    {
+        "code": "i02",
+        "name": "중강",
+        "weather": "02",
+        "weather_name": "흐림",
+        "temperature": "-21.1"
+    },
+    {
+        "code": "i12",
+        "name": "원산",
+        "weather": "01",
+        "weather_name": "맑음",
+        "temperature": "-7.0"
+    },
+    {
+        "code": "i06",
+        "name": "평양",
+        "weather": "01",
+        "weather_name": "맑음",
+        "temperature": "-9.8"
+    },
+    {
+        "code": "i05",
+        "name": "해주",
+        "weather": "01",
+        "weather_name": "맑음",
+        "temperature": "-6.2"
+    },
+    {
+        "code": "i07",
+        "name": "개성",
+        "weather": "01",
+        "weather_name": "맑음",
+        "temperature": "-8.1"
+    },
+    {
+        "code": "i08",
+        "name": "안주",
+        "weather": "01",
+        "weather_name": "맑음",
+        "temperature": "-10.8"
+    },
+    {
+        "code": "i10",
+        "name": "삼지연",
+        "weather": "04",
+        "weather_name": "약한눈계속",
+        "temperature": "-22.3"
+    }
+]
