@@ -11,7 +11,8 @@ code, name, weather_code, weather_name 항목으로 나누어 .json 파일로 �
 
 ![image](https://user-images.githubusercontent.com/80734989/149253377-15c22544-4a93-43a1-b221-62cf0f54b671.png)
 
-- #content > div > ul > li > div:nth-child(1) > div.weather-list > ul > li.i13 > span:nth-child(1)의 text가 지명으로 이루어져있는 걸 확인할 수 있다.
+- #content > div > ul > li > div:nth-child(1) > div.weather-list > ul > li.i13 > span:nth-child(1)의 
+- text가 지명으로 이루어져있는 걸 확인할 수 있다.
 
 - #content > div > ul > li > div:nth-child(1) > div.weather-list > ul > li.i13의 class요소가 지명 고유 코드로 이루어져있다.
 
