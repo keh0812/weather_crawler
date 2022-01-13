@@ -58,7 +58,7 @@ code, name, weather_code, weather_name 항목으로 나누어 .json 파일로 �
 
         json.dump(weather_list, json_file, ensure_ascii = False, indent = 4)
 
-### 결과 파일
+## 결과 파일
 
 - nk_weather_20220113091646.json 이름으로 .json파일이 만들어진다.
 
