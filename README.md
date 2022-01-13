@@ -17,24 +17,29 @@ code, name, weather_code, weather_name 항목으로 나누어 .json 파일로 �
 - #content > div > ul > li > div:nth-child(1) > div.weather-list > ul > li.i13의 class요소가 지명 고유 코드로 이루어져있다.
 
 ### 코드
+
   code = weather_item.get_attribute('class')
   print("code ==>", code)
 
 ### 지명
+
   nametag = "div:nth-child(1) > .weather-list > ul > li." + str(code) + " > span:nth-child(1)"
   name = driver.find_element_by_css_selector(nametag).text
   print("name ==>", name)
 
 ### 날씨코드
+
   weathertag = "div:nth-child(1) > .weather-list > ul > li." + str(code) + " > img"
   weather = driver.find_element_by_css_selector(weathertag).get_attribute('src')
   weather = weather.split('/')[-1]
   weather = weather.replace(".png" , "")
 
 ### 날씨
+
   weather_name = driver.find_element_by_css_selector(weathertag).get_attribute('title')
   
 ### 기온
+
   temperaturetag = "div:nth-child(1) > .weather-list > ul > li." + str(code) + " > span:nth-child(3) > strong > span"
   temperature = driver.find_element_by_css_selector(temperaturetag).text
   temperature = temperature.replace("℃" , "")
