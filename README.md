@@ -44,8 +44,9 @@ code, name, weather_code, weather_name 항목으로 나누어 .json 파일로 �
   temperature = driver.find_element_by_css_selector(temperaturetag).text
   temperature = temperature.replace("℃" , "")
  
-### 스케줄링을 사용할 예정이어서 파일명이 겹칠 위험이 있어, save_path는 오늘 날짜의 시,분,초까지 포함했다.
-  
+### save path
+* 스케줄링을 사용할 예정이어서 파일명이 겹칠 위험이 있어, save_path는 오늘 날짜의 시,분,초까지 포함했다.
+
     now = datetime.now()
     today = now.strftime("%Y%m%d%H%M%S")
     
